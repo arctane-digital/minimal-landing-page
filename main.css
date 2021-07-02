@@ -101,6 +101,7 @@ FONT IMPORT
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJbecmNE.woff2) format('woff2');
   unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Poppins';
@@ -110,6 +111,7 @@ FONT IMPORT
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Poppins';
@@ -119,6 +121,7 @@ FONT IMPORT
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 /* devanagari */
 @font-face {
   font-family: 'Poppins';
@@ -128,6 +131,7 @@ FONT IMPORT
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2) format('woff2');
   unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Poppins';
@@ -137,6 +141,7 @@ FONT IMPORT
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Poppins';
@@ -165,7 +170,7 @@ body, html {
 ------------------------------ */
 .header-background {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: block !important;
   top: 0;
   left: 0;
@@ -176,40 +181,46 @@ body, html {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background-image: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80)');
+  background: url('1.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  animation: AnimatedBackground 20s linear infinite 0s;
+  overflow: hidden;
+  animation: AnimatedBackground 10s 10s infinite;
+  -webkit-animation: AnimatedBackground 10s 10s infinite;
+  -moz-animation: AnimatedBackground 10s 10s infinite;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  animation-delay: 0s;
   animation-timing-function: ease-in-out;
 }
 
 @keyframes AnimatedBackground {
   0% {
-    background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80');
+    background-image: url('https://via.placeholder.com/1920x1080');
   }
 
   25% {
-    background-image: url('https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-image: url('https://via.placeholder.com/1920x1080');
   }
 
   50% {
-    background-image: url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-image: url('https://via.placeholder.com/1920x1080');
   }
 
   75% {
-    background-image: url('https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    background-image: url('https://via.placeholder.com/1920x1080');
   }
 
   100% {
-    background-image: url('https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
+    background-image: url('https://via.placeholder.com/1920x1080');
   }
-}
-
-.header-background h1, .h1 {
-  color: #FFFFFF !important;
-  display: block;
-  z-index: 99999 !important;
 }
 
 /* ------------------------------
@@ -217,7 +228,7 @@ body, html {
 ------------------------------ */
 .header-content {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: block !important;
   top: 0;
   left: 0;
@@ -254,7 +265,20 @@ body, html {
 }
 
 @media only screen and (max-width: 900px) {
-  .header-content h1, .h1 {
-    padding-top: 50px;
+  body, html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .header-background {
+    display: none !important;
+  }
+
+  .header-content .title {
+    font-size: 45px;
+  }
+
+  .header-content .social-connect i {
+    font-size: 28px;
   }
 }
