@@ -262,3 +262,26 @@ HEADER BACKGROUND - PARTICLES JS
   background: -moz-linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
   background: -webkit-linear-gradient(90deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
 }
+
+.header-content.particles {
+  width: 100%;
+  height: 100vh;
+  display: flex !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Header Background - ParticlesJS - Mobile Scaling */
+@media only screen and (min-width: 1200px) {
+  .header-content.particles {
+    display: none !important;
+  }
+}
