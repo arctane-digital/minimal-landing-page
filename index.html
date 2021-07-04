@@ -10,8 +10,7 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="index, follow">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#0000CC">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<!-- Primary Meta Tags -->
 	<meta name="title" content="This is an Example Website.">
@@ -24,6 +23,10 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="https://static.arctanedigital.co.uk/css/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<!-- Javascript -->
+	<script type="text/javascript" async src="https://static.arctanedigital.co.uk/javascript/jquery.js"></script>
+	<script type="text/javascript" src="https://static.arctanedigital.co.uk/javascript/particles.min.js"></script>
 
 </head>
 
@@ -51,18 +54,30 @@
 		</div>
 	</div>
 
-		<!-- (Desktop Right Side - Image Slider)
+	<!-- (Desktop Right Side - Image Slider)
 		<div class="col-md-6 col-sm-12 col-xs-12">
 			<div class="header-background-slider"></div>
 		</div>
 	</div>-->
 
-		<!-- (Desktop Right Side - Video)
+	<!-- (Desktop Right Side - Video)
 		<div class="col-md-6 col-sm-12 col-xs-12">
 			<div class="header-background-video">
 				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qC0vDKVPCrw?autoplay=1&mute=1" frameborder="0" allow="autoplay;encrypted-media" allowfullscreen include></iframe>
 			</div>
 		</div>-->
+
+	<!-- (Desktop Right Side / Mobile Background - ParticlesJS)
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<div id="header-background-particlesjs"></div>
+	</div> -->
+
+	<!-- ParticlesJS Config
+	<script>
+		particlesJS.load('header-background-particlesjs', 'particlesjs-config.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+	</script>-->
 
 	</div>
 
