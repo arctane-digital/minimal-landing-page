@@ -166,6 +166,12 @@ HEADER CONTENT
   }
 }
 
+@media (min-width: 768px) and (max-width: 1020px) {
+  .header-content {
+    display: none !important;
+  }
+}
+
 /* ------------------------------
 HEADER BACKGROUND - SINGLE IMAGE
 ------------------------------ */
@@ -280,7 +286,7 @@ HEADER BACKGROUND - PARTICLES JS
 }
 
 /* Header Background - ParticlesJS - Mobile Scaling */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .header-content.particles {
     display: none !important;
   }
